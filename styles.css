@@ -1,0 +1,214 @@
+
+/* Навигационная панель */
+.navbar {
+	display: block;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  position: fixed;
+  top: 0; 
+  width: 150%;
+  left: 0;
+  z-index: 100;
+box-shadow: 8px 5px 5px 2px rgba(0, 0, 255, .2);  
+}
+
+/* Ссылки в панели навигации */
+.navbar a {
+  float: left;
+  display: inline-block;
+  grid-template-rows: 50px;
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+  text-align: center;
+  padding: 16px 18px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+/* Изменение фона при наведении курсора мыши */
+.navbar a:hover {
+  background: #fffff;
+  color: #1D4797;
+  transform: scale(1.1);
+}
+navbar:hover{
+	position: fixed;
+	display:block;
+}
+/* Основное содержание */
+.main {
+  margin-top: 30px;
+}
+.herosection{
+	position: absolute;
+    left: 0px;
+    top: 100px;
+}
+.servicesblock{
+	position: absolute;
+    left: 0px;
+    top: 700px;
+}
+
+p {
+  display: absolute;
+  font-family: 'Roboto', sans-serif;
+  font-size: 35px;
+  line-height: 1.5em;
+  overflow: hidden;
+  text-align:left;
+  width: 1200px;
+  color: #000000;
+  text-decoration: none;
+}
+
+  
+.networks{
+	position: absolute;
+    left: 157px;
+    top: 625px;
+	display: grid;
+	grid-template-columns: 75px 1fr 1fr 25%;
+}
+.networks a {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+.networks a:hover {
+  transform: scale(1.15);
+}
+.about_company{
+	position: absolute;
+    left: 150px;
+    top: 700px;
+}
+
+.line{
+	border-bottom: 5px solid #5E3087;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #fffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 35px;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+  z-index: 100;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-size: 35px;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  z-index: 100;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  font-size: 35px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  position: absolute;
+  z-index: 100;
+}
+.products {
+	position: absolute;
+    left: 150px;
+    top: 1440px;
+	margin-right: 10px;
+}
+.products1 {
+  display: grid;
+  grid-template-columns: 595px 1fr 1fr 25%;
+}
+.products2 {
+  display: grid;
+  grid-template-columns: 705px 1fr 1fr 25%;
+}
+.products1 img {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+.products1 img:hover {
+  transform: scale(1.1);
+}
+.products2 img {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+.products2 img:hover {
+  transform: scale(1.1);
+}
+.products3 img {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+.products3 img:hover {
+	
+  transform: scale(1.1);
+}
+h2{
+	display: absolute;
+  font-family: 'Roboto', sans-serif;
+  font-size: 35px;
+  line-height: 1.5em;
+  overflow: hidden;
+  text-align:left;
+  width: 1200px;
+  color: #000000;
+  text-decoration: none;
+}
+footer {
+  position: absolute;
+  background-color: #273043;
+  padding: 15px;
+  left:0;
+  bottom:-1875px;
+  width: 1478px;
+}
+
+.myfooter a {
+	float: right;
+color: white;
+font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding: 12px 14px;
+  cursor: pointer;
+  text-decoration: none;
+font-size: 25px;
+
+}
+.myfooter a:after {
+	display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 2px; /*задаём ширину линии*/
+	background-color: white; /*задаём цвет линии*/
+	content: "";
+	transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+
+.myfooter a:hover:after,
+a:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}

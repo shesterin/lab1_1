@@ -1,0 +1,153 @@
+/* Навигационная панель */
+.navbar {
+	display: block;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  position: fixed;
+  top: 0; 
+  width: 150%;
+  left: 0;
+  z-index: 100;
+box-shadow: 8px 5px 5px 2px rgba(0, 0, 255, .2);  
+}
+
+/* Ссылки в панели навигации */
+.navbar a {
+  float: left;
+  display: inline-block;
+  grid-template-rows: 50px;
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+  text-align: center;
+  padding: 16px 18px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+/* Изменение фона при наведении курсора мыши */
+.navbar a:hover {
+  background: #fffff;
+  color: #1D4797;
+  transform: scale(1.1);
+}
+navbar:hover{
+	position: fixed;
+	display:block;
+}
+/* Основное содержание */
+.main {
+  margin-top: 30px;
+}
+p {
+  display: absolute;
+  font-family: 'Roboto', sans-serif;
+  font-size: 35px;
+  line-height: 1.5em;
+  overflow: hidden;
+  text-align:left;
+  width: 1200px;
+  color: #000000;
+  text-decoration: none;
+}
+h2 {
+  display: absolute;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  line-height: 1.5em;
+  overflow: hidden;
+  text-align:left;
+  width: 1200px;
+  color: #1D4797;
+  text-decoration: none;
+}
+.pagetitle{
+	position: absolute;
+    left: 150px;
+    top: 100px;
+}
+.contacts{
+	position: absolute;
+    left: 150px;
+    top: 200px;
+}
+.contacts p {
+  display: absolute;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 1.0em;
+  overflow: hidden;
+  text-align:left;
+  width: 1200px;
+  color: #000000;
+  text-decoration: none;
+}
+.contacts a {
+  display: absolute;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 1.0em;
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+  text-decoration: none;
+  }
+.contacts a:hover {
+  background: #fffff;
+  color: #1D4797;
+  text-decoration: underline;
+}
+.map{
+    position: absolute;
+    left: 800px;
+    top: 200px;
+}
+.adress{
+	position: absolute;
+    left: 800px;
+    top: 775px;
+}
+.adress p {
+  display: absolute;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 1.0em;
+  overflow: hidden;
+  text-align:left;
+  width: 1200px;
+  color: #000000;
+  text-decoration: none;
+}
+footer {
+  position: absolute;
+  background-color: #273043;
+  padding: 15px;
+  left:0;
+  bottom:-1075px;
+  width: 1478px;
+}
+
+.myfooter a {
+	float: right;
+color: white;
+font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding: 12px 14px;
+  cursor: pointer;
+  text-decoration: none;
+font-size: 25px;
+
+}
+.myfooter a:after {
+	display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 2px; /*задаём ширину линии*/
+	background-color: white; /*задаём цвет линии*/
+	content: "";
+	transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+
+.myfooter a:hover:after,
+a:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
